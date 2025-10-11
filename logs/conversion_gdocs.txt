@@ -1,0 +1,800 @@
+Converting 398 Word documents to PDF...
+[1/398] Processing Ganges.docx
+Skipping Ganges (already exists)
+[2/398] Processing Climate_change.docx
+Skipping Climate_change (already exists)
+[3/398] Processing Rock_music.docx
+Skipping Rock_music (already exists)
+[4/398] Processing Yellowstone_National_Park.docx
+Skipping Yellowstone_National_Park (already exists)
+[5/398] Processing Friedrich_Nietzsche.docx
+Skipping Friedrich_Nietzsche (already exists)
+[6/398] Processing Ancient_Greece.docx
+Skipping Ancient_Greece (already exists)
+[7/398] Processing Sun.docx
+Skipping Sun (already exists)
+[8/398] Processing Virtual_reality.docx
+Skipping Virtual_reality (already exists)
+[9/398] Processing Roman_mythology.docx
+Skipping Roman_mythology (already exists)
+[10/398] Processing Statistics.docx
+Skipping Statistics (already exists)
+[11/398] Processing Thomas_Jefferson.docx
+Skipping Thomas_Jefferson (already exists)
+[12/398] Processing Mount_Kilimanjaro.docx
+Skipping Mount_Kilimanjaro (already exists)
+[13/398] Processing Egyptian_mythology.docx
+Skipping Egyptian_mythology (already exists)
+[14/398] Processing Leonardo_da_Vinci.docx
+Skipping Leonardo_da_Vinci (already exists)
+[15/398] Processing Epistemology.docx
+Skipping Epistemology (already exists)
+[16/398] Processing J._K._Rowling.docx
+Skipping J._K._Rowling (already exists)
+[17/398] Processing Clothing.docx
+Skipping Clothing (already exists)
+[18/398] Processing Geothermal_energy.docx
+Skipping Geothermal_energy (already exists)
+[19/398] Processing Nile.docx
+Skipping Nile (already exists)
+[20/398] Processing Protein.docx
+Skipping Protein (already exists)
+[21/398] Processing Pearl_Harbor.docx
+Skipping Pearl_Harbor (already exists)
+[22/398] Processing Big_Bang.docx
+Skipping Big_Bang (already exists)
+[23/398] Processing Country_music.docx
+Skipping Country_music (already exists)
+[24/398] Processing Nelson_Mandela.docx
+Skipping Nelson_Mandela (already exists)
+[25/398] Processing Geoffrey_Chaucer.docx
+Skipping Geoffrey_Chaucer (already exists)
+[26/398] Processing Franklin_D._Roosevelt.docx
+Skipping Franklin_D._Roosevelt (already exists)
+[27/398] Processing Ultrasound.docx
+Skipping Ultrasound (already exists)
+[28/398] Processing Jackson_Pollock.docx
+Skipping Jackson_Pollock (already exists)
+[29/398] Processing Capitalism.docx
+Skipping Capitalism (already exists)
+[30/398] Processing Hydroelectricity.docx
+Skipping Hydroelectricity (already exists)
+[31/398] Processing Food.docx
+Skipping Food (already exists)
+[32/398] Processing Norse_mythology.docx
+Skipping Norse_mythology (already exists)
+[33/398] Processing China.docx
+Skipping China (already exists)
+[34/398] Processing Dante_Alighieri.docx
+Skipping Dante_Alighieri (already exists)
+[35/398] Processing Renaissance.docx
+Skipping Renaissance (already exists)
+[36/398] Processing Biotechnology.docx
+Skipping Biotechnology (already exists)
+[37/398] Processing Danube.docx
+Skipping Danube (already exists)
+[38/398] Processing John_Stuart_Mill.docx
+Skipping John_Stuart_Mill (already exists)
+[39/398] Processing Economics.docx
+Skipping Economics (already exists)
+[40/398] Processing Space_Race.docx
+Skipping Space_Race (already exists)
+[41/398] Processing Sonnet.docx
+Skipping Sonnet (already exists)
+[42/398] Processing Postmodernism.docx
+Skipping Postmodernism (already exists)
+[43/398] Processing Rocky_Mountains.docx
+Skipping Rocky_Mountains (already exists)
+[44/398] Processing Diabetes.docx
+Skipping Diabetes (already exists)
+[45/398] Processing Arab_Spring.docx
+Skipping Arab_Spring (already exists)
+[46/398] Processing Hinduism.docx
+Skipping Hinduism (already exists)
+[47/398] Processing Salvador_Dalí.docx
+Skipping Salvador_Dalí (already exists)
+[48/398] Processing Track_and_field.docx
+Skipping Track_and_field (already exists)
+[49/398] Processing World_War_I.docx
+Skipping World_War_I (already exists)
+[50/398] Processing Abolition.docx
+Skipping Abolition (already exists)
+[51/398] Processing Mississippi_River.docx
+Skipping Mississippi_River (already exists)
+[52/398] Processing United_Nations.docx
+Skipping United_Nations (already exists)
+[53/398] Processing International_Monetary_Fund.docx
+Skipping International_Monetary_Fund (already exists)
+[54/398] Processing World_War_II.docx
+Skipping World_War_II (already exists)
+[55/398] Processing Ethics.docx
+Skipping Ethics (already exists)
+[56/398] Processing Bob_Dylan.docx
+Skipping Bob_Dylan (already exists)
+[57/398] Processing Supply_and_demand.docx
+Skipping Supply_and_demand (already exists)
+[58/398] Processing Earth.docx
+Skipping Earth (already exists)
+[59/398] Processing Leo_Tolstoy.docx
+Skipping Leo_Tolstoy (already exists)
+[60/398] Processing Ernest_Hemingway.docx
+Skipping Ernest_Hemingway (already exists)
+[61/398] Processing Great_Depression.docx
+Skipping Great_Depression (already exists)
+[62/398] Processing Women's_suffrage.docx
+Skipping Women's_suffrage (already exists)
+[63/398] Processing Homer.docx
+Skipping Homer (already exists)
+[64/398] Processing Solar_panel.docx
+Skipping Solar_panel (already exists)
+[65/398] Processing Sahara.docx
+Skipping Sahara (already exists)
+[66/398] Processing Agatha_Christie.docx
+Skipping Agatha_Christie (already exists)
+[67/398] Processing Ludwig_van_Beethoven.docx
+Skipping Ludwig_van_Beethoven (already exists)
+[68/398] Processing Television.docx
+Skipping Television (already exists)
+[69/398] Processing South_America.docx
+Skipping South_America (already exists)
+[70/398] Processing Nutrition.docx
+Skipping Nutrition (already exists)
+[71/398] Processing Laser.docx
+Skipping Laser (already exists)
+[72/398] Processing Aristotle.docx
+Skipping Aristotle (already exists)
+[73/398] Processing Africa.docx
+Skipping Africa (already exists)
+[74/398] Processing City.docx
+Skipping City (already exists)
+[75/398] Processing Dead_Sea.docx
+Skipping Dead_Sea (already exists)
+[76/398] Processing Algebra.docx
+Skipping Algebra (already exists)
+[77/398] Processing Atmosphere.docx
+Skipping Atmosphere (already exists)
+[78/398] Processing Organic_farming.docx
+Skipping Organic_farming (already exists)
+[79/398] Processing Spanish_Empire.docx
+Skipping Spanish_Empire (already exists)
+[80/398] Processing Vietnam_War.docx
+Skipping Vietnam_War (already exists)
+[81/398] Processing California_gold_rush.docx
+Skipping California_gold_rush (already exists)
+[82/398] Processing Pablo_Picasso.docx
+Skipping Pablo_Picasso (already exists)
+[83/398] Processing Ancient_Egypt.docx
+Skipping Ancient_Egypt (already exists)
+[84/398] Processing Crop_rotation.docx
+Skipping Crop_rotation (already exists)
+[85/398] Processing Arctic_Ocean.docx
+Skipping Arctic_Ocean (already exists)
+[86/398] Processing Amazon_River.docx
+Skipping Amazon_River (already exists)
+[87/398] Processing Great_Lakes.docx
+Skipping Great_Lakes (already exists)
+[88/398] Processing Galápagos_Islands.docx
+Skipping Galápagos_Islands (already exists)
+[89/398] Processing South_Africa.docx
+Skipping South_Africa (already exists)
+[90/398] Processing Black_hole.docx
+Skipping Black_hole (already exists)
+[91/398] Processing Napoleon.docx
+Skipping Napoleon (already exists)
+[92/398] Processing Dark_energy.docx
+Skipping Dark_energy (already exists)
+[93/398] Processing Grand_Canyon.docx
+Skipping Grand_Canyon (already exists)
+[94/398] Processing Supernova.docx
+Skipping Supernova (already exists)
+[95/398] Processing Denali.docx
+Skipping Denali (already exists)
+[96/398] Processing Blockchain.docx
+Skipping Blockchain (already exists)
+[97/398] Processing Chemistry.docx
+Skipping Chemistry (already exists)
+[98/398] Processing Education.docx
+Skipping Education (already exists)
+[99/398] Processing Recycling.docx
+Skipping Recycling (already exists)
+[100/398] Processing Normandy_landings.docx
+Skipping Normandy_landings (already exists)
+[101/398] Processing Holy_Roman_Empire.docx
+Skipping Holy_Roman_Empire (already exists)
+[102/398] Processing Bells_seasonings.docx
+Skipping Bells_seasonings (already exists)
+[103/398] Processing Australia.docx
+Skipping Australia (already exists)
+[104/398] Processing Plate_tectonics.docx
+Skipping Plate_tectonics (already exists)
+[105/398] Processing Antarctica.docx
+Skipping Antarctica (already exists)
+[106/398] Processing French_Revolution.docx
+Skipping French_Revolution (already exists)
+[107/398] Processing Genetics.docx
+Skipping Genetics (already exists)
+[108/398] Processing Cricket.docx
+Skipping Cricket (already exists)
+[109/398] Processing Moon.docx
+Skipping Moon (already exists)
+[110/398] Processing Free_verse.docx
+Skipping Free_verse (already exists)
+[111/398] Processing Urbanization.docx
+Skipping Urbanization (already exists)
+[112/398] Processing Nuclear_energy.docx
+Skipping Nuclear_energy (already exists)
+[113/398] Processing Classical_music.docx
+Skipping Classical_music (already exists)
+[114/398] Processing Italy.docx
+Skipping Italy (already exists)
+[115/398] Processing Fascism.docx
+Skipping Fascism (already exists)
+[116/398] Processing American_Revolution.docx
+Skipping American_Revolution (already exists)
+[117/398] Processing Ottoman_Empire.docx
+Skipping Ottoman_Empire (already exists)
+[118/398] Processing Poetry.docx
+Skipping Poetry (already exists)
+[119/398] Processing India.docx
+Skipping India (already exists)
+[120/398] Processing Pollution.docx
+Skipping Pollution (already exists)
+[121/398] Processing Ocean.docx
+Skipping Ocean (already exists)
+[122/398] Processing Metaphysics.docx
+Skipping Metaphysics (already exists)
+[123/398] Processing Judaism.docx
+Skipping Judaism (already exists)
+[124/398] Processing Socialism.docx
+Skipping Socialism (already exists)
+[125/398] Processing DNA.docx
+Skipping DNA (already exists)
+[126/398] Processing Black_Death.docx
+Skipping Black_Death (already exists)
+[127/398] Processing Atlantic_Ocean.docx
+Skipping Atlantic_Ocean (already exists)
+[128/398] Processing Great_Barrier_Reef.docx
+Skipping Great_Barrier_Reef (already exists)
+[129/398] Processing Colonialism.docx
+Skipping Colonialism (already exists)
+[130/398] Processing Republic.docx
+Skipping Republic (already exists)
+[131/398] Processing Microscope.docx
+Skipping Microscope (already exists)
+[132/398] Processing Telescope.docx
+Skipping Telescope (already exists)
+[133/398] Processing Rainbow.docx
+Skipping Rainbow (already exists)
+[134/398] Processing Ancient_Rome.docx
+Skipping Ancient_Rome (already exists)
+[135/398] Processing Frida_Kahlo.docx
+Skipping Frida_Kahlo (already exists)
+[136/398] Processing Inca_Empire.docx
+Skipping Inca_Empire (already exists)
+[137/398] Processing Yangtze.docx
+Skipping Yangtze (already exists)
+[138/398] Processing Impressionism.docx
+Skipping Impressionism (already exists)
+[139/398] Processing Organ_transplantation.docx
+Skipping Organ_transplantation (already exists)
+[140/398] Processing Haiku.docx
+Skipping Haiku (already exists)
+[141/398] Processing Christopher_Columbus.docx
+Skipping Christopher_Columbus (already exists)
+[142/398] Processing Iceland.docx
+Skipping Iceland (already exists)
+[143/398] Processing Myth.docx
+Skipping Myth (already exists)
+[144/398] Processing Fyodor_Dostoevsky.docx
+Skipping Fyodor_Dostoevsky (already exists)
+[145/398] Processing Hannibal.docx
+Skipping Hannibal (already exists)
+[146/398] Processing Hiroshima.docx
+Skipping Hiroshima (already exists)
+[147/398] Processing Blues.docx
+Skipping Blues (already exists)
+[148/398] Processing Vegetarianism.docx
+Skipping Vegetarianism (already exists)
+[149/398] Processing Cloning.docx
+Skipping Cloning (already exists)
+[150/398] Processing Mexico.docx
+Skipping Mexico (already exists)
+[151/398] Processing Kenya.docx
+Skipping Kenya (already exists)
+[152/398] Processing Wind_turbine.docx
+Skipping Wind_turbine (already exists)
+[153/398] Processing Ethiopia.docx
+Skipping Ethiopia (already exists)
+[154/398] Processing Universe.docx
+Skipping Universe (already exists)
+[155/398] Processing Mont_Blanc.docx
+Skipping Mont_Blanc (already exists)
+[156/398] Processing George_Washington.docx
+Skipping George_Washington (already exists)
+[157/398] Processing Agriculture.docx
+Skipping Agriculture (already exists)
+[158/398] Processing Galaxy.docx
+Skipping Galaxy (already exists)
+[159/398] Processing Christianity.docx
+Skipping Christianity (already exists)
+[160/398] Processing Blood_transfusion.docx
+Skipping Blood_transfusion (already exists)
+[161/398] Processing Brazil.docx
+Skipping Brazil (already exists)
+[162/398] Processing Age_of_Enlightenment.docx
+Skipping Age_of_Enlightenment (already exists)
+[163/398] Processing United_Kingdom.docx
+Skipping United_Kingdom (already exists)
+[164/398] Processing Sociology.docx
+Skipping Sociology (already exists)
+[165/398] Processing Civil_rights_movement.docx
+Skipping Civil_rights_movement (already exists)
+[166/398] Processing Byzantine_Empire.docx
+Skipping Byzantine_Empire (already exists)
+[167/398] Processing Cooking.docx
+Skipping Cooking (already exists)
+[168/398] Processing Democracy.docx
+Skipping Democracy (already exists)
+[169/398] Processing Adolf_Hitler.docx
+Skipping Adolf_Hitler (already exists)
+[170/398] Processing Japan.docx
+Skipping Japan (already exists)
+[171/398] Processing NATO.docx
+Skipping NATO (already exists)
+[172/398] Processing Pacific_Ocean.docx
+Skipping Pacific_Ocean (already exists)
+[173/398] Processing Madagascar.docx
+Skipping Madagascar (already exists)
+[174/398] Processing Skyscraper.docx
+Skipping Skyscraper (already exists)
+[175/398] Processing Alzheimer's_disease.docx
+Skipping Alzheimer's_disease (already exists)
+[176/398] Processing Surgery.docx
+Skipping Surgery (already exists)
+[177/398] Processing Art_Nouveau.docx
+Skipping Art_Nouveau (already exists)
+[178/398] Processing Immune_system.docx
+Skipping Immune_system (already exists)
+[179/398] Processing Ferdinand_Magellan.docx
+Skipping Ferdinand_Magellan (already exists)
+[180/398] Processing Lewis_and_Clark_Expedition.docx
+Skipping Lewis_and_Clark_Expedition (already exists)
+[181/398] Processing Philosophy.docx
+Skipping Philosophy (already exists)
+[182/398] Processing Buddhism.docx
+Skipping Buddhism (already exists)
+[183/398] Processing Acoustics.docx
+Skipping Acoustics (already exists)
+[184/398] Processing Artificial_intelligence.docx
+Skipping Artificial_intelligence (already exists)
+[185/398] Processing Medicine.docx
+Skipping Medicine (already exists)
+[186/398] Processing Reformation.docx
+Skipping Reformation (already exists)
+[187/398] Processing Car.docx
+Skipping Car (already exists)
+[188/398] Processing Johann_Wolfgang_von_Goethe.docx
+Skipping Johann_Wolfgang_von_Goethe (already exists)
+[189/398] Processing Printing_press.docx
+Skipping Printing_press (already exists)
+[190/398] Processing Religion.docx
+Skipping Religion (already exists)
+[191/398] Processing Atheism.docx
+Skipping Atheism (already exists)
+[192/398] Processing Stem_cell.docx
+Skipping Stem_cell (already exists)
+[193/398] Processing Robotics.docx
+Skipping Robotics (already exists)
+[194/398] Processing Geometry.docx
+Skipping Geometry (already exists)
+[195/398] Processing Rhine.docx
+Skipping Rhine (already exists)
+[196/398] Processing Solar_System.docx
+Skipping Solar_System (already exists)
+[197/398] Processing Rembrandt.docx
+Skipping Rembrandt (already exists)
+[198/398] Processing Red_Sea.docx
+Skipping Red_Sea (already exists)
+[199/398] Processing Exoplanet.docx
+Skipping Exoplanet (already exists)
+[200/398] Processing Asia.docx
+Skipping Asia (already exists)
+[201/398] Processing Deforestation.docx
+Skipping Deforestation (already exists)
+[202/398] Processing Psychology.docx
+Skipping Psychology (already exists)
+[203/398] Processing Victoria_Falls.docx
+Skipping Victoria_Falls (already exists)
+[204/398] Processing Plato.docx
+Skipping Plato (already exists)
+[205/398] Processing Hundred_Years'_War.docx
+Skipping Hundred_Years'_War (already exists)
+[206/398] Processing Greenland.docx
+Skipping Greenland (already exists)
+[207/398] Processing New_Deal.docx
+Skipping New_Deal (already exists)
+[208/398] Processing Modernism.docx
+Skipping Modernism (already exists)
+[209/398] Processing Anesthesia.docx
+Skipping Anesthesia (already exists)
+[210/398] Processing The_Holocaust.docx
+Skipping The_Holocaust (already exists)
+[211/398] Processing Bridge.docx
+Skipping Bridge (already exists)
+[212/398] Processing RNA.docx
+Skipping RNA (already exists)
+[213/398] Processing Yosemite_National_Park.docx
+Skipping Yosemite_National_Park (already exists)
+[214/398] Processing Michelangelo.docx
+Skipping Michelangelo (already exists)
+[215/398] Processing Korean_War.docx
+Skipping Korean_War (already exists)
+[216/398] Processing Industrial_Revolution.docx
+Skipping Industrial_Revolution (already exists)
+[217/398] Processing Andes.docx
+Skipping Andes (already exists)
+[218/398] Processing Mark_Twain.docx
+Skipping Mark_Twain (already exists)
+[219/398] Processing Benjamin_Franklin.docx
+Skipping Benjamin_Franklin (already exists)
+[220/398] Processing Vasco_da_Gama.docx
+Skipping Vasco_da_Gama (already exists)
+[221/398] Processing Stock_market.docx
+Skipping Stock_market (already exists)
+[222/398] Processing Genghis_Khan.docx
+Skipping Genghis_Khan (already exists)
+[223/398] Processing CT_scan.docx
+Skipping CT_scan (already exists)
+[224/398] Processing Miguel_de_Cervantes.docx
+Skipping Miguel_de_Cervantes (already exists)
+[225/398] Processing Charles_Dickens.docx
+Skipping Charles_Dickens (already exists)
+[226/398] Processing Cardiovascular_disease.docx
+Skipping Cardiovascular_disease (already exists)
+[227/398] Processing Pesticide.docx
+Skipping Pesticide (already exists)
+[228/398] Processing Ozone_layer.docx
+Skipping Ozone_layer (already exists)
+[229/398] Processing Inflation.docx
+Skipping Inflation (already exists)
+[230/398] Processing Cuisine.docx
+Skipping Cuisine (already exists)
+[231/398] Processing Magnetic_resonance_imaging.docx
+Skipping Magnetic_resonance_imaging (already exists)
+[232/398] Processing Evolution.docx
+Skipping Evolution (already exists)
+[233/398] Processing Antibiotic.docx
+Skipping Antibiotic (already exists)
+[234/398] Processing Johann_Sebastian_Bach.docx
+Skipping Johann_Sebastian_Bach (already exists)
+[235/398] Processing Super_Bowl.docx
+Skipping Super_Bowl (already exists)
+[236/398] Processing Immanuel_Kant.docx
+Skipping Immanuel_Kant (already exists)
+[237/398] Processing Abstract_art.docx
+Skipping Abstract_art (already exists)
+[238/398] Processing Greek_mythology.docx
+Skipping Greek_mythology (already exists)
+[239/398] Processing American_Civil_War.docx
+Skipping American_Civil_War (already exists)
+[240/398] Processing Moon_landing.docx
+Skipping Moon_landing (already exists)
+[241/398] Processing Bicycle.docx
+Skipping Bicycle (already exists)
+[242/398] Processing Claude_Monet.docx
+Skipping Claude_Monet (already exists)
+[243/398] Processing Biodiversity.docx
+Skipping Biodiversity (already exists)
+[244/398] Processing Nanotechnology.docx
+Skipping Nanotechnology (already exists)
+[245/398] Processing Victor_Hugo.docx
+Skipping Victor_Hugo (already exists)
+[246/398] Processing Linguistics.docx
+Skipping Linguistics (already exists)
+[247/398] Processing Design.docx
+Skipping Design (already exists)
+[248/398] Processing Russia.docx
+Skipping Russia (already exists)
+[249/398] Processing Martin_Luther_King_Jr..docx
+Skipping Martin_Luther_King_Jr. (already exists)
+[250/398] Processing Football.docx
+Skipping Football (already exists)
+[251/398] Processing F._Scott_Fitzgerald.docx
+Skipping F._Scott_Fitzgerald (already exists)
+[252/398] Processing Photosynthesis.docx
+Skipping Photosynthesis (already exists)
+[253/398] Processing Novel.docx
+Skipping Novel (already exists)
+[254/398] Processing Photography.docx
+Skipping Photography (already exists)
+[255/398] Processing France.docx
+Skipping France (already exists)
+[256/398] Processing Maya_civilization.docx
+Skipping Maya_civilization (already exists)
+[257/398] Processing River_Thames.docx
+Skipping River_Thames (already exists)
+[258/398] Processing Baroque.docx
+Skipping Baroque (already exists)
+[259/398] Processing Gothic_architecture.docx
+Skipping Gothic_architecture (already exists)
+[260/398] Processing James_Joyce.docx
+Skipping James_Joyce (already exists)
+[261/398] Processing K2.docx
+Skipping K2 (already exists)
+[262/398] Processing Livestock.docx
+Skipping Livestock (already exists)
+[263/398] Processing Reconstruction_era.docx
+Skipping Reconstruction_era (already exists)
+[264/398] Processing Textile.docx
+Skipping Textile (already exists)
+[265/398] Processing Morocco.docx
+Skipping Morocco (already exists)
+[266/398] Processing Pop_music.docx
+Skipping Pop_music (already exists)
+[267/398] Processing History_of_atomic_theory.docx
+Skipping History_of_atomic_theory (already exists)
+[268/398] Processing Optics.docx
+Skipping Optics (already exists)
+[269/398] Processing Bacteria.docx
+Skipping Bacteria (already exists)
+[270/398] Processing 3D_printing.docx
+Skipping 3D_printing (already exists)
+[271/398] Processing Calculus.docx
+Skipping Calculus (already exists)
+[272/398] Processing CRISPR.docx
+Skipping CRISPR (already exists)
+[273/398] Processing Anthropology.docx
+Skipping Anthropology (already exists)
+[274/398] Processing Tornado.docx
+Skipping Tornado (already exists)
+[275/398] Processing Middle_Ages.docx
+Skipping Middle_Ages (already exists)
+[276/398] Processing Internet.docx
+Skipping Internet (already exists)
+[277/398] Processing Abraham_Lincoln.docx
+Skipping Abraham_Lincoln (already exists)
+[278/398] Processing Electromagnetism.docx
+Skipping Electromagnetism (already exists)
+[279/398] Processing Baseball.docx
+Skipping Baseball (already exists)
+[280/398] Processing Mars.docx
+Skipping Mars (already exists)
+[281/398] Processing Scientific_Revolution.docx
+Skipping Scientific_Revolution (already exists)
+[282/398] Processing Cold_War.docx
+Skipping Cold_War (already exists)
+[283/398] Processing Film.docx
+Skipping Film (already exists)
+[284/398] Processing Amazon_rainforest.docx
+Skipping Amazon_rainforest (already exists)
+[285/398] Processing Germany.docx
+Skipping Germany (already exists)
+[286/398] Processing Fashion.docx
+Skipping Fashion (already exists)
+[287/398] Processing Stephen_King.docx
+Skipping Stephen_King (already exists)
+[288/398] Processing Tunnel.docx
+Skipping Tunnel (already exists)
+[289/398] Processing New_Zealand.docx
+Skipping New_Zealand (already exists)
+[290/398] Processing Angel_Falls.docx
+Skipping Angel_Falls (already exists)
+[291/398] Processing Smartphone.docx
+Skipping Smartphone (already exists)
+[292/398] Processing North_America.docx
+Skipping North_America (already exists)
+[293/398] Processing Basketball.docx
+Skipping Basketball (already exists)
+[294/398] Processing September_11_attacks.docx
+Skipping September_11_attacks (already exists)
+[295/398] Processing Anxiety.docx
+Skipping Anxiety (already exists)
+[296/398] Processing Caspian_Sea.docx
+Skipping Caspian_Sea (already exists)
+[297/398] Processing William_Shakespeare.docx
+Skipping William_Shakespeare (already exists)
+[298/398] Processing Roman_Empire.docx
+Skipping Roman_Empire (already exists)
+[299/398] Processing Golf.docx
+Skipping Golf (already exists)
+[300/398] Processing Jane_Austen.docx
+Skipping Jane_Austen (already exists)
+[301/398] Processing Water_cycle.docx
+Skipping Water_cycle (already exists)
+[302/398] Processing Slavery.docx
+Skipping Slavery (already exists)
+[303/398] Processing Cuban_Missile_Crisis.docx
+Skipping Cuban_Missile_Crisis (already exists)
+[304/398] Processing Vincent_van_Gogh.docx
+Skipping Vincent_van_Gogh (already exists)
+[305/398] Processing Mathematics.docx
+Skipping Mathematics (already exists)
+[306/398] Processing Acid_rain.docx
+Skipping Acid_rain (already exists)
+[307/398] Processing Quantum_computing.docx
+Skipping Quantum_computing (already exists)
+[308/398] Processing Claude_Debussy.docx
+Skipping Claude_Debussy (already exists)
+[309/398] Processing Renewable_energy.docx
+Skipping Renewable_energy (already exists)
+[310/398] Processing Aztec_Empire.docx
+Skipping Aztec_Empire (already exists)
+[311/398] Processing Gymnastics.docx
+Skipping Gymnastics (already exists)
+[312/398] Processing United_States.docx
+Skipping United_States (already exists)
+[313/398] Processing Europe.docx
+Skipping Europe (already exists)
+[314/398] Processing X-ray.docx
+Skipping X-ray (already exists)
+[315/398] Processing Alps.docx
+Skipping Alps (already exists)
+[316/398] Processing Sustainability.docx
+Skipping Sustainability (already exists)
+[317/398] Processing Andy_Warhol.docx
+Skipping Andy_Warhol (already exists)
+[318/398] Processing Berlin_Wall.docx
+Skipping Berlin_Wall (already exists)
+[319/398] Processing Genetically_modified_organism.docx
+Skipping Genetically_modified_organism (already exists)
+[320/398] Processing Logic.docx
+Skipping Logic (already exists)
+[321/398] Processing Ecology.docx
+Skipping Ecology (already exists)
+[322/398] Processing Physics.docx
+Skipping Physics (already exists)
+[323/398] Processing Periodic_table.docx
+Skipping Periodic_table (already exists)
+[324/398] Processing Probability.docx
+Skipping Probability (already exists)
+[325/398] Processing Olympic_Games.docx
+Skipping Olympic_Games (already exists)
+[326/398] Processing Train.docx
+Skipping Train (already exists)
+[327/398] Processing Marco_Polo.docx
+Skipping Marco_Polo (already exists)
+[328/398] Processing Biology.docx
+Skipping Biology (already exists)
+[329/398] Processing Radio.docx
+Skipping Radio (already exists)
+[330/398] Processing British_Empire.docx
+Skipping British_Empire (already exists)
+[331/398] Processing Egypt.docx
+Skipping Egypt (already exists)
+[332/398] Processing Niagara_Falls.docx
+Skipping Niagara_Falls (already exists)
+[333/398] Processing Virus.docx
+Skipping Virus (already exists)
+[334/398] Processing Cell_biology.docx
+Skipping Cell_biology (already exists)
+[335/398] Processing Spain.docx
+Skipping Spain (already exists)
+[336/398] Processing Canada.docx
+Skipping Canada (already exists)
+[337/398] Processing Mahatma_Gandhi.docx
+Skipping Mahatma_Gandhi (already exists)
+[338/398] Processing Crusades.docx
+Skipping Crusades (already exists)
+[339/398] Processing Cryptocurrency.docx
+Skipping Cryptocurrency (already exists)
+[340/398] Processing Thermodynamics.docx
+Skipping Thermodynamics (already exists)
+[341/398] Processing Volcano.docx
+Skipping Volcano (already exists)
+[342/398] Processing Dissolution_of_the_Soviet_Union.docx
+Skipping Dissolution_of_the_Soviet_Union (already exists)
+[343/398] Processing Cloud_computing.docx
+Skipping Cloud_computing (already exists)
+[344/398] Processing FIFA_World_Cup.docx
+Skipping FIFA_World_Cup (already exists)
+[345/398] Processing Monarchy.docx
+Skipping Monarchy (already exists)
+[346/398] Processing Telegraphy.docx
+Skipping Telegraphy (already exists)
+[347/398] Processing Renaissance_art.docx
+Skipping Renaissance_art (already exists)
+[348/398] Processing Road.docx
+Skipping Road (already exists)
+[349/398] Processing Marcel_Proust.docx
+Skipping Marcel_Proust (already exists)
+[350/398] Processing Epic.docx
+Skipping Epic (already exists)
+[351/398] Processing Communism.docx
+Skipping Communism (already exists)
+[352/398] Processing Labour_movement.docx
+Skipping Labour_movement (already exists)
+[353/398] Processing Political_philosophy.docx
+Skipping Political_philosophy (already exists)
+[354/398] Processing Tropical_cyclone.docx
+Skipping Tropical_cyclone (already exists)
+[355/398] Processing Cleopatra.docx
+Skipping Cleopatra (already exists)
+[356/398] Processing Recession.docx
+Skipping Recession (already exists)
+[357/398] Processing Relativity.docx
+Skipping Relativity (already exists)
+[358/398] Processing Ship.docx
+Skipping Ship (already exists)
+[359/398] Processing Transport.docx
+Skipping Transport (already exists)
+[360/398] Processing Lightning.docx
+Skipping Lightning (already exists)
+[361/398] Processing Weather.docx
+Skipping Weather (already exists)
+[362/398] Processing Depression.docx
+Skipping Depression (already exists)
+[363/398] Processing George_Orwell.docx
+Skipping George_Orwell (already exists)
+[364/398] Processing Watergate_scandal.docx
+Skipping Watergate_scandal (already exists)
+[365/398] Processing Surrealism.docx
+Skipping Surrealism (already exists)
+[366/398] Processing Architecture.docx
+Skipping Architecture (already exists)
+[367/398] Processing Vaccine.docx
+Skipping Vaccine (already exists)
+[368/398] Processing Wolfgang_Amadeus_Mozart.docx
+Skipping Wolfgang_Amadeus_Mozart (already exists)
+[369/398] Processing James_Cook.docx
+Skipping James_Cook (already exists)
+[370/398] Processing Swimming.docx
+Skipping Swimming (already exists)
+[371/398] Processing Telephone.docx
+Skipping Telephone (already exists)
+[372/398] Processing Winston_Churchill.docx
+Skipping Winston_Churchill (already exists)
+[373/398] Processing Computer.docx
+Skipping Computer (already exists)
+[374/398] Processing Mount_Everest.docx
+Skipping Mount_Everest (already exists)
+[375/398] Processing Motorcycle.docx
+Skipping Motorcycle (already exists)
+[376/398] Processing Igor_Stravinsky.docx
+Skipping Igor_Stravinsky (already exists)
+[377/398] Processing Drama.docx
+Skipping Drama (already exists)
+[378/398] Processing Hip-hop.docx
+Skipping Hip-hop (already exists)
+[379/398] Processing Mediterranean_Sea.docx
+Skipping Mediterranean_Sea (already exists)
+[380/398] Processing Python_(programming_language).docx
+Skipping Python_(programming_language) (already exists)
+[381/398] Processing Neutron_star.docx
+Skipping Neutron_star (already exists)
+[382/398] Processing Cancer.docx
+Skipping Cancer (already exists)
+[383/398] Processing Greenhouse_effect.docx
+Skipping Greenhouse_effect (already exists)
+[384/398] Processing Gene_therapy.docx
+Skipping Gene_therapy (already exists)
+[385/398] Processing Nigeria.docx
+Skipping Nigeria (already exists)
+[386/398] Processing Quantum_mechanics.docx
+Skipping Quantum_mechanics (already exists)
+[387/398] Processing Archaeology.docx
+Skipping Archaeology (already exists)
+[388/398] Processing Mesopotamia.docx
+Skipping Mesopotamia (already exists)
+[389/398] Processing Machine_learning.docx
+Skipping Machine_learning (already exists)
+[390/398] Processing Association_football.docx
+Skipping Association_football (already exists)
+[391/398] Processing Himalayas.docx
+Skipping Himalayas (already exists)
+[392/398] Processing Pyotr_Ilyich_Tchaikovsky.docx
+Skipping Pyotr_Ilyich_Tchaikovsky (already exists)
+[393/398] Processing Veganism.docx
+Skipping Veganism (already exists)
+[394/398] Processing Mongol_Empire.docx
+Skipping Mongol_Empire (already exists)
+[395/398] Processing Dark_matter.docx
+Skipping Dark_matter (already exists)
+[396/398] Processing World_Bank_Group.docx
+Skipping World_Bank_Group (already exists)
+[397/398] Processing Earthquake.docx
+Skipping Earthquake (already exists)
+[398/398] Processing Tennis.docx
+Skipping Tennis (already exists)
+
+Conversion complete!
+Successfully converted: 398/398

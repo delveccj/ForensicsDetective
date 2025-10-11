@@ -1,0 +1,113 @@
+Python PDF Generator for Forensic Research
+==================================================
+ReportLab version: 4.4.4
+python-docx available
+
+Generating Python PDFs for 100 documents...
+[  1/100] Ganges.docx -> Ganges.pdf
+[  2/100] Climate_change.docx -> Climate_change.pdf
+[  3/100] Rock_music.docx -> Rock_music.pdf
+[  4/100] Yellowstone_National_Park.docx -> Yellowstone_National_Park.pdf
+[  5/100] Friedrich_Nietzsche.docx -> Friedrich_Nietzsche.pdf
+[  6/100] Ancient_Greece.docx -> Ancient_Greece.pdf
+[  7/100] Sun.docx -> Sun.pdf
+[  8/100] Virtual_reality.docx -> Virtual_reality.pdf
+[  9/100] Roman_mythology.docx -> Roman_mythology.pdf
+[ 10/100] Statistics.docx -> Statistics.pdf
+[ 11/100] Thomas_Jefferson.docx -> Thomas_Jefferson.pdf
+[ 12/100] Mount_Kilimanjaro.docx -> Mount_Kilimanjaro.pdf
+[ 13/100] Egyptian_mythology.docx -> Egyptian_mythology.pdf
+[ 14/100] Leonardo_da_Vinci.docx -> Leonardo_da_Vinci.pdf
+[ 15/100] Epistemology.docx -> Epistemology.pdf
+[ 16/100] J._K._Rowling.docx -> J._K._Rowling.pdf
+[ 17/100] Clothing.docx -> Clothing.pdf
+[ 18/100] Geothermal_energy.docx -> Geothermal_energy.pdf
+[ 19/100] Nile.docx -> Nile.pdf
+[ 20/100] Protein.docx -> Protein.pdf
+[ 21/100] Pearl_Harbor.docx -> Pearl_Harbor.pdf
+[ 22/100] Big_Bang.docx -> Big_Bang.pdf
+[ 23/100] Country_music.docx -> Country_music.pdf
+[ 24/100] Nelson_Mandela.docx -> Nelson_Mandela.pdf
+[ 25/100] Geoffrey_Chaucer.docx -> Geoffrey_Chaucer.pdf
+[ 26/100] Franklin_D._Roosevelt.docx -> Franklin_D._Roosevelt.pdf
+[ 27/100] Ultrasound.docx -> Ultrasound.pdf
+[ 28/100] Jackson_Pollock.docx -> Jackson_Pollock.pdf
+[ 29/100] Capitalism.docx -> Capitalism.pdf
+[ 30/100] Hydroelectricity.docx -> Hydroelectricity.pdf
+[ 31/100] Food.docx -> Food.pdf
+[ 32/100] Norse_mythology.docx -> Norse_mythology.pdf
+[ 33/100] China.docx -> China.pdf
+[ 34/100] Dante_Alighieri.docx -> Dante_Alighieri.pdf
+[ 35/100] Renaissance.docx -> Renaissance.pdf
+[ 36/100] Biotechnology.docx -> Biotechnology.pdf
+[ 37/100] Danube.docx -> Danube.pdf
+[ 38/100] John_Stuart_Mill.docx -> John_Stuart_Mill.pdf
+[ 39/100] Economics.docx -> Economics.pdf
+[ 40/100] Space_Race.docx -> Space_Race.pdf
+[ 41/100] Sonnet.docx -> Sonnet.pdf
+[ 42/100] Postmodernism.docx -> Postmodernism.pdf
+[ 43/100] Rocky_Mountains.docx -> Rocky_Mountains.pdf
+[ 44/100] Diabetes.docx -> Diabetes.pdf
+[ 45/100] Arab_Spring.docx -> Arab_Spring.pdf
+[ 46/100] Hinduism.docx -> Hinduism.pdf
+[ 47/100] Salvador_Dalí.docx -> Salvador_Dalí.pdf
+[ 48/100] Track_and_field.docx -> Track_and_field.pdf
+[ 49/100] World_War_I.docx -> World_War_I.pdf
+[ 50/100] Abolition.docx -> Abolition.pdf
+[ 51/100] Mississippi_River.docx -> Mississippi_River.pdf
+[ 52/100] United_Nations.docx -> United_Nations.pdf
+[ 53/100] International_Monetary_Fund.docx -> International_Monetary_Fund.pdf
+[ 54/100] World_War_II.docx -> World_War_II.pdf
+[ 55/100] Ethics.docx -> Ethics.pdf
+[ 56/100] Bob_Dylan.docx -> Bob_Dylan.pdf
+[ 57/100] Supply_and_demand.docx -> Supply_and_demand.pdf
+[ 58/100] Earth.docx -> Earth.pdf
+[ 59/100] Leo_Tolstoy.docx -> Leo_Tolstoy.pdf
+[ 60/100] Ernest_Hemingway.docx -> Ernest_Hemingway.pdf
+[ 61/100] Great_Depression.docx -> Great_Depression.pdf
+[ 62/100] Women's_suffrage.docx -> Women's_suffrage.pdf
+[ 63/100] Homer.docx -> Homer.pdf
+[ 64/100] Solar_panel.docx -> Solar_panel.pdf
+[ 65/100] Sahara.docx -> Sahara.pdf
+[ 66/100] Agatha_Christie.docx -> Agatha_Christie.pdf
+[ 67/100] Ludwig_van_Beethoven.docx -> Ludwig_van_Beethoven.pdf
+[ 68/100] Television.docx -> Television.pdf
+[ 69/100] South_America.docx -> South_America.pdf
+[ 70/100] Nutrition.docx -> Nutrition.pdf
+[ 71/100] Laser.docx -> Laser.pdf
+[ 72/100] Aristotle.docx -> Aristotle.pdf
+[ 73/100] Africa.docx -> Africa.pdf
+[ 74/100] City.docx -> City.pdf
+[ 75/100] Dead_Sea.docx -> Dead_Sea.pdf
+[ 76/100] Algebra.docx -> Algebra.pdf
+[ 77/100] Atmosphere.docx -> Atmosphere.pdf
+[ 78/100] Organic_farming.docx -> Organic_farming.pdf
+[ 79/100] Spanish_Empire.docx -> Spanish_Empire.pdf
+[ 80/100] Vietnam_War.docx -> Vietnam_War.pdf
+[ 81/100] California_gold_rush.docx -> California_gold_rush.pdf
+[ 82/100] Pablo_Picasso.docx -> Pablo_Picasso.pdf
+[ 83/100] Ancient_Egypt.docx -> Ancient_Egypt.pdf
+[ 84/100] Crop_rotation.docx -> Crop_rotation.pdf
+[ 85/100] Arctic_Ocean.docx -> Arctic_Ocean.pdf
+[ 86/100] Amazon_River.docx -> Amazon_River.pdf
+[ 87/100] Great_Lakes.docx -> Great_Lakes.pdf
+[ 88/100] Galápagos_Islands.docx -> Galápagos_Islands.pdf
+[ 89/100] South_Africa.docx -> South_Africa.pdf
+[ 90/100] Black_hole.docx -> Black_hole.pdf
+[ 91/100] Napoleon.docx -> Napoleon.pdf
+[ 92/100] Dark_energy.docx -> Dark_energy.pdf
+[ 93/100] Grand_Canyon.docx -> Grand_Canyon.pdf
+[ 94/100] Supernova.docx -> Supernova.pdf
+[ 95/100] Denali.docx -> Denali.pdf
+[ 96/100] Blockchain.docx -> Blockchain.pdf
+[ 97/100] Chemistry.docx -> Chemistry.pdf
+[ 98/100] Education.docx -> Education.pdf
+[ 99/100] Recycling.docx -> Recycling.pdf
+[100/100] Normandy_landings.docx -> Normandy_landings.pdf
+
+Python PDF generation complete!
+Successful: 100
+Failed: 0
+
+Next step: Convert Python PDFs to binary images
+Run: python pdf_to_binary_image.py --python-pdfs

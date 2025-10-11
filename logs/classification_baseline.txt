@@ -1,0 +1,66 @@
+PDF Provenance Detection - Baseline Classifiers
+==================================================
+Loading dataset...
+Loading 100 Word-generated images...
+  Loaded 50/100 Word images
+  Loaded 100/100 Word images
+Loading 100 Google Docs-generated images...
+  Loaded 50/100 Google images
+  Loaded 100/100 Google images
+Dataset loaded: 200 samples, 40000 features per sample
+Class distribution: Word=100, Google=100
+
+Normalizing features...
+Splitting dataset (80% train, 20% test)...
+Training set: 160 samples
+Test set: 40 samples
+
+=== Training SVM Classifier ===
+Training SVM with RBF kernel...
+Training completed in 0.15 seconds
+SVM Accuracy: 0.9750
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        Word       0.95      1.00      0.98        20
+      Google       1.00      0.95      0.97        20
+
+    accuracy                           0.97        40
+   macro avg       0.98      0.97      0.97        40
+weighted avg       0.98      0.97      0.97        40
+
+
+Confusion Matrix:
+[[20  0]
+ [ 1 19]]
+
+=== Training SGD Classifier ===
+Training SGD with hinge loss...
+Training completed in 0.04 seconds
+SGD Accuracy: 0.9750
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        Word       0.95      1.00      0.98        20
+      Google       1.00      0.95      0.97        20
+
+    accuracy                           0.97        40
+   macro avg       0.98      0.97      0.97        40
+weighted avg       0.98      0.97      0.97        40
+
+
+Confusion Matrix:
+[[20  0]
+ [ 1 19]]
+
+==================================================
+BASELINE RESULTS SUMMARY
+==================================================
+SVM Accuracy:  0.9750
+SGD Accuracy:  0.9750
+Best performing model: SGD
+
+Saving trained models...
+Models saved successfully!
