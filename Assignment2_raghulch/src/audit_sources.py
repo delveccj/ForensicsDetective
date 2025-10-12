@@ -11,7 +11,7 @@ def pct(x): return 100*float(x)
 has_img = meta['has_images'].astype(float).mean()
 has_tbl = meta['has_tables'].astype(float).mean()
 
-print("=== Complexity Audit ===")
+print("Complexity Audit")
 print(f"Total sources: {len(meta)}")
 print(f"With images/charts: {pct(has_img):.1f}%  (target ≥ 30%)")
 print(f"With tables:        {pct(has_tbl):.1f}%  (target ≥ 25%)")
@@ -35,7 +35,7 @@ print(f"  30+:  {c_30p}    (inclusive)")
 ok_15_30 = c_15_30 >= 200
 ok_30p   = c_30p   >= 50
 
-print("\n=== Verdicts ===")
+print("\n Verdicts")
 print("Images   (≥30%):", "PASS" if ok_img else "FAIL")
 print("Tables   (≥25%):", "PASS" if ok_tbl else "FAIL")
 print("15–30 p. (≥200):", "PASS" if ok_15_30 else "FAIL")

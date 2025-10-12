@@ -8,7 +8,7 @@ from docx.shared import Inches
 import matplotlib.pyplot as plt
 import wikipediaapi
 
-# >>> EDIT THESE TWO STRINGS TO YOUR INFO <<<
+
 USER_AGENT = "ForensicsDetective/1.0 (GitHub: raghuldav; contact: raghuldav@gmail.com)"
 
 ROOT = Path(__file__).resolve().parents[1]

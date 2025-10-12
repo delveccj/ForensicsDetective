@@ -22,7 +22,7 @@ wiki = wikipediaapi.Wikipedia(
     language="en",
 )
 
-# seed topics (use pdf_names.txt if available; else fallback list)
+# seed topics 
 topics = []
 pdf_names = (ROOT.parent/"ForensicsDetective"/"pdf_names.txt")
 if pdf_names.exists():

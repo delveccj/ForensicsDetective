@@ -22,7 +22,7 @@ def make_eq_png(out_path, eq):
     plt.savefig(out_path, bbox_inches="tight")
     plt.close()
 
-# IMPORTANT: single backslashes (use raw strings)
+#  single backslashes 
 eqs = [
     r"$E=mc^2$",
     r"$\int_a^b f(x)\,dx$",

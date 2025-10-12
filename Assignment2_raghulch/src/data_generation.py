@@ -53,7 +53,7 @@ def load_meta():
             })
     return rows
 
-# ---- Python / ReportLab ----
+# Python 
 def make_python_pdfs(limit: Optional[int]=None):
     try:
         from reportlab.pdfgen import canvas
@@ -80,7 +80,7 @@ def make_python_pdfs(limit: Optional[int]=None):
         for p in range(pages):
             c.setFont("Helvetica", 11)
             y = H-110
-            # try draw an asset if exists
+            
             chart = ASSETS / f"chart_{doc_id}.png"
             eq    = ASSETS / f"eq_{doc_id}.png"
             pick  = chart if chart.exists() else (eq if eq.exists() else None)
@@ -96,7 +96,7 @@ def make_python_pdfs(limit: Optional[int]=None):
             c.showPage()
         c.save()
 
-# ---- Word → PDF ----
+# Word → PDF 
 def word_to_pdf_word_mac(src: Path, dst: Path):
     script = f'''
     tell application "Microsoft Word"
@@ -130,7 +130,7 @@ def make_word_pdfs(limit: Optional[int]=None):
         except subprocess.CalledProcessError as e:
             print(f"WARN: failed on {docx.name}: {e}", file=sys.stderr)
 
-# ---- HTML → PDF via Chrome (Google Docs style) ----
+# HTML → PDF via Chrome (Google Docs style) 
 def html_to_pdf_chrome(chrome_bin: str, src_html: Path, dst_pdf: Path):
     cmd = [chrome_bin, "--headless", "--disable-gpu", f"--print-to-pdf={dst_pdf}", str(src_html.resolve().as_uri())]
     subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
