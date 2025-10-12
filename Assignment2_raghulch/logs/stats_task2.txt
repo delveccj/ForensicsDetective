@@ -1,0 +1,21 @@
+Complexity
+has_images: 37.2%
+has_tables: 32.9%
+has_equations: 25.0%
+
+Page Length
+Mean: 3.5448 Std: 4.9048866408919185
+count    6250.000000
+mean        3.544800
+std         4.905279
+min         1.000000
+25%         2.000000
+50%         3.000000
+75%         4.000000
+max        45.000000
+Name: pages_target, dtype: float64
+
+PDF Counts
+word_pdfs: 6648
+google_docs_pdfs: 6646
+python_pdfs: 6350
