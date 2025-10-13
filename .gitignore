@@ -208,5 +208,6 @@ __marimo__/
 
 oauth_credentials.json
 # Ignore runtime logs
-Assignment2_raghulch/logs/
-!Assignment2_raghulch/logs/.gitkeep
+
+# Ignore only the page-check noise log
+Assignment2_raghulch/logs/check_fifth_pages_*.txt

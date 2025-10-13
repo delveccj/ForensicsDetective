@@ -1,0 +1,5 @@
+PDF Counts
+  word_pdfs:           6648
+  google_docs_pdfs:    6646
+  python_pdfs:         6350
+  fourth_source_pdfs:  6250

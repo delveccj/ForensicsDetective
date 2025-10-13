@@ -1,0 +1,2 @@
+Counts: {'word': 6648, 'gdocs': 6646, 'python': 6350, 'fourth': 6250}
+Task 3 scale requirement: PASS
