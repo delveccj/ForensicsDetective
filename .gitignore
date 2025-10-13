@@ -207,3 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 oauth_credentials.json
+# Ignore runtime logs
+Assignment2_raghulch/logs/
+!Assignment2_raghulch/logs/.gitkeep
