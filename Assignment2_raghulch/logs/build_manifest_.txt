@@ -1,0 +1,7 @@
+Wrote /content/ForensicsDetective/Assignment2_raghulch/data/manifest_4sources.csv with 6648 rows
+          count
+#sources       
+4          6250
+2           296
+3           100
+1             2
