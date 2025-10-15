@@ -1,0 +1,4 @@
+[INFO] Class counts (original): {0: 45, 1: 396, 2: 100}
+[INFO] Using StratifiedKFold with k=5. Kept classes & counts: {0: 45, 1: 396, 2: 100}
+>>> Tuning RandomForest
+Fitting 3 folds for each of 30 candidates, totalling 90 fits

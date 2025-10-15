@@ -1,0 +1,120 @@
+===== Task 4 & 5 Run Summary =====
+Stamp: Wed Oct 15 10:26:20 PM UTC 2025
+
+Class counts seen (from analysis stdout snapshot in your screenshot):
+  {0: 45, 1: 396, 2: 100}  (3 classes present in this run)
+
+== Saved Models ==
+-rw-r--r-- 1 root root 237M Oct 15 22:09 results/models/mlp_best.pkl
+-rw-r--r-- 1 root root 1.3M Oct 15 22:09 results/models/rf_best.pkl
+
+== Best Params (RF) ==
+{
+  "rf__bootstrap": false,
+  "rf__max_depth": 7,
+  "rf__max_features": "log2",
+  "rf__min_samples_leaf": 6,
+  "rf__min_samples_split": 3,
+  "rf__n_estimators": 491
+}
+== Best Params (MLP) ==
+{
+  "mlp__activation": "relu",
+  "mlp__alpha": 2.5113061677390015e-06,
+  "mlp__batch_size": 128,
+  "mlp__beta_1": 0.8,
+  "mlp__beta_2": 0.98,
+  "mlp__hidden_layer_sizes": [
+    512,
+    256
+  ],
+  "mlp__learning_rate_init": 0.0015958573588141277,
+  "mlp__solver": "sgd"
+}
+== Metrics CSV (first 10 rows) ==
+model,fold,accuracy,precision_weighted,recall_weighted,f1_weighted,train_time_sec,predict_time_sec,n_test
+svm_rbf,1,1.0,1.0,1.0,1.0,1.3706453119993967,2.415111223999702,109
+sgd_hinge,1,1.0,1.0,1.0,1.0,0.6541731519992027,0.003569500999219599,109
+rf,1,1.0,1.0,1.0,1.0,0.6601459529993008,0.08375329400041664,109
+mlp,1,1.0,1.0,1.0,1.0,30.780791858998782,0.03979896300006658,109
+svm_rbf,2,1.0,1.0,1.0,1.0,1.3689950699990732,2.3438176620002196,108
+sgd_hinge,2,1.0,1.0,1.0,1.0,0.7007459910000762,0.003207439000107115,108
+rf,2,1.0,1.0,1.0,1.0,0.6534052679999149,0.08650664600099844,108
+mlp,2,1.0,1.0,1.0,1.0,31.149941438001406,0.04025472099965555,108
+svm_rbf,3,1.0,1.0,1.0,1.0,1.582580615002371,2.535313332999067,108
+
+== Confusion Matrices Count ==
+20
+
+== Statistical Tests ==
+[
+  {
+    "test": "paired_t",
+    "model_a": "svm_rbf",
+    "model_b": "sgd_hinge",
+    "t_stat": 1.0,
+    "p_value": 0.373900966300059
+  },
+  {
+    "test": "paired_t",
+    "model_a": "svm_rbf",
+    "model_b": "rf",
+    "t_stat": NaN,
+    "p_value": NaN
+  },
+  {
+    "test": "paired_t",
+    "model_a": "svm_rbf",
+    "model_b": "mlp",
+    "t_stat": NaN,
+    "p_value": NaN
+  },
+  {
+    "test": "paired_t",
+    "model_a": "sgd_hinge",
+    "model_b": "rf",
+    "t_stat": -1.0,
+    "p_value": 0.373900966300059
+  },
+  {
+    "test": "paired_t",
+    "model_a": "sgd_hinge",
+    "model_b": "mlp",
+    "t_stat": -1.0,
+    "p_value": 0.373900966300059
+  },
+  {
+    "test": "paired_t",
+    "model_a": "rf",
+    "model_b": "mlp",
+    "t_stat": NaN,
+    "p_value": NaN
+  },
+  {
+    "test": "mcnemar_last_fold",
+    "model_a": "svm_rbf",
+    "model_b": "rf",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "n01": 0,
+    "n10": 0
+  },
+  {
+    "test": "mcnemar_last_fold",
+    "model_a": "svm_rbf",
+    "model_b": "mlp",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "n01": 0,
+    "n10": 0
+  },
+  {
+    "test": "mcnemar_last_fold",
+    "model_a": "rf",
+    "model_b": "mlp",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "n01": 0,
+    "n10": 0
+  }
+]

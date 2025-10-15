@@ -1,0 +1,71 @@
+[
+  {
+    "test": "paired_t",
+    "model_a": "svm_rbf",
+    "model_b": "sgd_hinge",
+    "t_stat": 1.0,
+    "p_value": 0.373900966300059
+  },
+  {
+    "test": "paired_t",
+    "model_a": "svm_rbf",
+    "model_b": "rf",
+    "t_stat": NaN,
+    "p_value": NaN
+  },
+  {
+    "test": "paired_t",
+    "model_a": "svm_rbf",
+    "model_b": "mlp",
+    "t_stat": NaN,
+    "p_value": NaN
+  },
+  {
+    "test": "paired_t",
+    "model_a": "sgd_hinge",
+    "model_b": "rf",
+    "t_stat": -1.0,
+    "p_value": 0.373900966300059
+  },
+  {
+    "test": "paired_t",
+    "model_a": "sgd_hinge",
+    "model_b": "mlp",
+    "t_stat": -1.0,
+    "p_value": 0.373900966300059
+  },
+  {
+    "test": "paired_t",
+    "model_a": "rf",
+    "model_b": "mlp",
+    "t_stat": NaN,
+    "p_value": NaN
+  },
+  {
+    "test": "mcnemar_last_fold",
+    "model_a": "svm_rbf",
+    "model_b": "rf",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "n01": 0,
+    "n10": 0
+  },
+  {
+    "test": "mcnemar_last_fold",
+    "model_a": "svm_rbf",
+    "model_b": "mlp",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "n01": 0,
+    "n10": 0
+  },
+  {
+    "test": "mcnemar_last_fold",
+    "model_a": "rf",
+    "model_b": "mlp",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "n01": 0,
+    "n10": 0
+  }
+]
