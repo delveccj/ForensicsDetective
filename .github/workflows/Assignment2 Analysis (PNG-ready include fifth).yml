@@ -1,4 +1,4 @@
-name: Assignment2 Analysis (PNG-ready, include fifth)
+name: Assignment2 Analysis (PNG-ready include fifth)
 
 on:
   workflow_dispatch: {}
