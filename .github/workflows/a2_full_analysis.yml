@@ -1,9 +1,15 @@
-name: Assignment2 Full Analysis
+name: Assignment2 Analysis (PNG-ready)
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      include_fifth:
+        description: "Also run 5-class (--include-fifth)?"
+        required: false
+        default: "false"
+
 permissions:
-  contents: write         # allow committing results back
+  contents: write
 
 jobs:
   run:
@@ -18,32 +24,24 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: System deps (poppler for pdftoppm)
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y poppler-utils
-
-      - name: Python deps
+      - name: Install Python deps
         run: |
           python -m pip install -U pip
           pip install numpy scipy scikit-learn matplotlib pillow pymupdf joblib statsmodels
 
-      - name: Convert PDFs -> PNGs (idempotent)
-        working-directory: Assignment2_raghulch
-        run: |
-          python src/image_conversion.py
+      
 
-      - name: Task 4+5 — FULL 4-class analysis
+      - name: 4-class analysis
         working-directory: Assignment2_raghulch
         env:
-          MIN_BYTES: "0"
+          MIN_BYTES: "0"        # tolerant image loader
         run: |
           mkdir -p results/logs
           python src/analysis.py | tee results/logs/task5_4class_actions.txt
 
-      - name: (Optional) 5-class analysis (skip failure)
+      - name: 5-class analysis (optional)
+        if: ${{ github.event.inputs.include_fifth == 'true' }}
         working-directory: Assignment2_raghulch
-        continue-on-error: true
         env:
           MIN_BYTES: "0"
         run: |
@@ -56,11 +54,11 @@ jobs:
           name: assignment2-results
           path: Assignment2_raghulch/results
 
-      - name: Commit results back to repo (CSV/JSON/PKL/PNGs under results)
+      - name: Commit results back to repo
         working-directory: Assignment2_raghulch
         run: |
           git config user.name  "Raghul (CI)"
           git config user.email "raghuldav+ci@users.noreply.github.com"
           git add results || true
-          git commit -m "CI: add Task 4+5 results (auto)" || echo "nothing to commit"
+          git commit -m "CI: analysis results (PNG-ready workflow)" || echo "nothing to commit"
           git push || true
