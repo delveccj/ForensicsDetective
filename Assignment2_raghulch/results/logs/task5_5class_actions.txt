@@ -1,0 +1,5 @@
+[WARN] word_pdfs_png: skipped 45 corrupt/tiny images
+[WARN] google_docs_pdfs_png: skipped 396 corrupt/tiny images
+[WARN] python_pdfs_png: skipped 100 corrupt/tiny images
+[WARN] fourth_source_pdfs_png: skipped 6250 corrupt/tiny images
+[WARN] fifth_source_pdfs_png: skipped 6250 corrupt/tiny images
