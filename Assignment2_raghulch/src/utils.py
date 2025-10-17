@@ -8,6 +8,14 @@ import numpy as np
 from PIL import Image, ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True  # tolerate slightly truncated PNGs
 
+# Try to import PyMuPDF for PDF fallback
+try:
+    import fitz  # PyMuPDF
+    _HAVE_FITZ = True
+except Exception:
+    fitz = None
+    _HAVE_FITZ = False
+
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import (
     confusion_matrix,
@@ -15,28 +23,44 @@ from sklearn.metrics import (
     precision_recall_fscore_support,
 )
 
-# Global config (imported by analysis.py)
-
+# -------- global config (used by analysis.py) --------
 RANDOM_STATE = int(os.getenv("RANDOM_STATE", "42"))
 CV_FOLDS     = int(os.getenv("CV_FOLDS", "5"))
 TEST_SIZE    = float(os.getenv("TEST_SIZE", "0.2"))
 
 def get_splitter() -> StratifiedKFold:
-    """Deterministic StratifiedKFold used by ALL models to keep splits identical."""
     return StratifiedKFold(n_splits=CV_FOLDS, shuffle=True, random_state=RANDOM_STATE)
 
-# Image dataset loading
-def load_png_dir(
-    dirpath: Path,
-    label: int,
-    target_size: Tuple[int, int] = (200, 200),
-) -> Tuple[list, list]:
-    """
-    Load grayscale, resized PNGs from a directory into flat numpy vectors.
-    Corrupt/empty images are skipped safely.
+# -------- helpers --------
+def _to_gray_resized_array(im: Image.Image, target_size: Tuple[int,int]) -> np.ndarray:
+    if im.mode != "L":
+        im = im.convert("L")
+    im = im.resize(target_size, Image.LANCZOS)
+    arr = (np.asarray(im, dtype=np.float32) / 255.0).ravel()
+    return arr
 
-    Env:
-      MIN_BYTES (int, default=0): minimum file size to accept. Set 0 to disable size filtering.
+def _render_pdf_page0_to_array(pdf_path: Path, target_size: Tuple[int,int], dpi: int = 150) -> np.ndarray | None:
+    """Render first page of a PDF to a grayscale, resized vector. Returns None on failure."""
+    if not _HAVE_FITZ:
+        return None
+    try:
+        doc = fitz.open(pdf_path)
+        if doc.page_count == 0:
+            return None
+        page = doc.load_page(0)
+        zoom = dpi / 72.0
+        pix = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), alpha=False)
+        # Convert raw bytes -> PIL -> resize/gray -> vector
+        im = Image.frombytes("RGB" if pix.n>=3 else "L", (pix.width, pix.height), pix.samples)
+        return _to_gray_resized_array(im, target_size)
+    except Exception:
+        return None
+
+# -------- loaders --------
+def load_png_dir(dirpath: Path, label: int, target_size: Tuple[int,int]=(200,200)) -> Tuple[list, list]:
+    """
+    Load grayscale, resized PNGs from dirpath into 1D numpy vectors.
+    Skips unreadable files. MIN_BYTES=0 by default (accept all non-empty files).
     """
     X, y = [], []
     if not dirpath.exists():
@@ -48,7 +72,6 @@ def load_png_dir(
         print(f"[WARN] {dirpath.name}: no PNGs found")
         return X, y
 
-    # Size gate: configurable, defaults to 0 (no size-based skipping)
     try:
         min_bytes = int(os.getenv("MIN_BYTES", "0"))
     except Exception:
@@ -67,54 +90,79 @@ def load_png_dir(
 
         try:
             with Image.open(p) as img:
-                img = img.convert("L").resize(target_size, Image.LANCZOS)
-                arr = (np.asarray(img, dtype=np.float32) / 255.0).ravel()
-                X.append(arr)
-                y.append(label)
+                arr = _to_gray_resized_array(img, target_size)
+                X.append(arr); y.append(label)
         except Exception:
-            # Any PIL/IO error → skip
             skipped += 1
-            continue
 
     if skipped:
         print(f"[WARN] {dirpath.name}: skipped {skipped} corrupt/tiny images")
     return X, y
 
-
-def load_dataset(
-    data_dir: Path,
-    include_fifth: bool = False,
-    target_size: Tuple[int, int] = (200, 200),
-) -> Tuple[np.ndarray, np.ndarray, List[str]]:
+def load_pdf_dir(dirpath: Path, label: int, target_size: Tuple[int,int]=(200,200)) -> Tuple[list, list]:
     """
-    Build the dataset from expected *_pdfs_png folders (under `data_dir`).
+    Fallback loader: render PDF page 1 (page 0) to arrays using PyMuPDF (fitz).
+    """
+    X, y = [], []
+    if not dirpath.exists():
+        print(f"[WARN] missing folder: {dirpath}")
+        return X, y
+    if not _HAVE_FITZ:
+        print(f"[WARN] PyMuPDF not available; cannot render PDFs in {dirpath.name}")
+        return X, y
+
+    files = sorted(f for f in os.listdir(dirpath) if f.lower().endswith(".pdf"))
+    if not files:
+        print(f"[WARN] {dirpath.name}: no PDFs found (for fallback)")
+        return X, y
+
+    kept = 0; bad = 0
+    for fname in files:
+        p = dirpath / fname
+        arr = _render_pdf_page0_to_array(p, target_size, dpi=150)
+        if arr is None:
+            bad += 1
+            continue
+        X.append(arr); y.append(label); kept += 1
+
+    print(f"[INFO] (PDF fallback) {dirpath.name}: kept {kept}, failed {bad}")
+    return X, y
+
+def load_dataset(data_dir: Path, include_fifth: bool=False, target_size: Tuple[int,int]=(200,200)) -> Tuple[np.ndarray, np.ndarray, List[str]]:
+    """
+    Build dataset. Preferred: *_pdfs_png dirs.
+    If a class has 0 valid PNGs, try *_pdfs via PDF fallback (in-memory render).
     """
     mapping = [
-        ("word_pdfs_png", 0, "Word"),
-        ("google_docs_pdfs_png", 1, "GoogleDocs"),
-        ("python_pdfs_png", 2, "Python"),
-        ("fourth_source_pdfs_png", 3, "Fourth"),
+        ("word_pdfs_png",            "word_pdfs",            0, "Word"),
+        ("google_docs_pdfs_png",     "google_docs_pdfs",     1, "GoogleDocs"),
+        ("python_pdfs_png",          "python_pdfs",          2, "Python"),
+        ("fourth_source_pdfs_png",   "fourth_source_pdfs",   3, "Fourth"),
     ]
     if include_fifth:
-        mapping.append(("fifth_source_pdfs_png", 4, "Fifth"))
+        mapping.append(("fifth_source_pdfs_png", "fifth_source_pdfs", 4, "Fifth"))
 
     X_all, y_all, class_names = [], [], []
-    for folder, lab, cname in mapping:
-        Xi, yi = load_png_dir(Path(data_dir) / folder, lab, target_size)
+    for png_dir_name, pdf_dir_name, lab, cname in mapping:
+        png_dir = Path(data_dir)/png_dir_name
+        pdf_dir = Path(data_dir)/pdf_dir_name
+
+        Xi, yi = load_png_dir(png_dir, lab, target_size)
+        if not yi:
+            print(f"[INFO] {png_dir_name}: 0 valid PNGs -> trying PDF fallback from {pdf_dir_name}")
+            Xi, yi = load_pdf_dir(pdf_dir, lab, target_size)
+
         if yi:
-            X_all += Xi
-            y_all += yi
-            class_names.append(cname)
+            X_all += Xi; y_all += yi; class_names.append(cname)
         else:
-            print(f"[WARN] no valid images kept in {folder}")
+            print(f"[WARN] no valid samples for class '{cname}' (png and pdf both failed)")
 
-    if X_all:
-        X = np.stack(X_all, axis=0).astype(np.float32)
-        y = np.asarray(y_all, dtype=np.int64)
-    else:
-        raise RuntimeError("No valid images found in any class. Check paths, LFS checkout, and MIN_BYTES.")
+    if not X_all:
+        raise RuntimeError("No valid images found in any class. Check paths, LFS checkout, MIN_BYTES, and PyMuPDF.")
 
-    # Sanity: need >= 2 classes with samples
+    X = np.stack(X_all, axis=0).astype(np.float32)
+    y = np.asarray(y_all, dtype=np.int64)
+
     from collections import Counter
     counts = Counter(y.tolist())
     print("[INFO] Class counts (kept):", dict(sorted(counts.items())))
@@ -123,16 +171,10 @@ def load_dataset(
 
     return X, y, class_names
 
-# Metrics & confusion matrix
-
+# -------- metrics & confusion matrix --------
 def compute_metrics(y_true: np.ndarray, y_pred: np.ndarray, average: str = "weighted") -> dict:
-    """
-    Weighted precision/recall/F1 + accuracy, safe with missing labels (zero_division=0).
-    """
     acc = float(accuracy_score(y_true, y_pred))
-    prec, rec, f1, _ = precision_recall_fscore_support(
-        y_true, y_pred, average=average, zero_division=0
-    )
+    prec, rec, f1, _ = precision_recall_fscore_support(y_true, y_pred, average=average, zero_division=0)
     return {
         "accuracy": acc,
         "precision_weighted": float(prec),
@@ -147,7 +189,6 @@ def save_confusion(
     title: str,
     out_path: Path,
 ) -> None:
-    """Save a labeled confusion matrix PNG."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
