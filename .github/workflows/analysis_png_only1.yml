@@ -1,0 +1,91 @@
+name: Assignment2 Analysis (PNG-only)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # If your PNGs are still in Git LFS, set a PAT in repo secrets as LFS_TOKEN and uncomment:
+          # lfs: true
+          # token: ${{ secrets.LFS_TOKEN }}
+
+      # If you DO keep PNGs in LFS, uncomment this block to fetch them
+      # - name: Ensure git-lfs and fetch PNGs (only if using LFS)
+      #   run: |
+      #     set -euxo pipefail
+      #     sudo apt-get update -y
+      #     sudo apt-get install -y git-lfs
+      #     git lfs install
+      #     git lfs fetch --all || true
+      #     git lfs checkout || true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install -U pip
+          pip install numpy scipy scikit-learn matplotlib pillow pymupdf joblib statsmodels
+
+      - name: Verify PNGs exist (fail if missing/empty)
+        working-directory: Assignment2_raghulch
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "== Checking PNG datasets =="
+          check () {
+            local d="data/$1"
+            echo "Checking $d ..."
+            if [[ ! -d "$d" ]]; then echo "::error::Missing $d"; exit 1; fi
+            shopt -s nullglob
+            local n=("$d"/*.png)
+            if [[ ${#n[@]} -eq 0 ]]; then echo "::error::$d is empty"; exit 1; fi
+            echo "  OK: ${#n[@]} PNGs"
+          }
+          check word_pdfs_png
+          check google_docs_pdfs_png
+          check python_pdfs_png
+          # If you want 4-class include fourth_source_pdfs_png:
+          check fourth_source_pdfs_png
+          # If you plan 5-class, also ensure fifth:
+          check fifth_source_pdfs_png || true  # allow 4-class only if you don’t have fifth
+
+      - name: Run analysis (4-class + 5-class)
+        working-directory: Assignment2_raghulch
+        env:
+          MIN_BYTES: "0"    # be lenient with small PNGs
+        run: |
+          set -euxo pipefail
+          mkdir -p results/logs
+          echo "=== 4-class analysis ==="
+          python src/analysis.py | tee results/logs/task5_4class_actions.txt
+          echo "=== 5-class analysis (include fifth) ==="
+          python src/analysis.py --include-fifth | tee results/logs/task5_5class_actions.txt || echo "5-class run skipped/failed"
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: assignment2-results
+          path: Assignment2_raghulch/results
+
+      - name: Commit results back to repo
+        working-directory: Assignment2_raghulch
+        run: |
+          git config user.name  "Raghul (CI)"
+          git config user.email "raghuldav+ci@users.noreply.github.com"
+          git add results || true
+          git commit -m "CI: analysis results (PNG-only)" || echo "nothing to commit"
+          git push || true
