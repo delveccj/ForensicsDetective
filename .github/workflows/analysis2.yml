@@ -1,0 +1,113 @@
+name: Assignment2 Analysis (PNG-only, debug)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout (with optional LFS)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true                # set true if any PNGs are tracked by LFS
+          # If your repo is private or LFS needs auth, add a repo secret LFS_TOKEN (PAT with 'repo')
+          # token: ${{ secrets.LFS_TOKEN }}
+
+      - name: Ensure git-lfs & force fetch (safe even if not using LFS)
+        run: |
+          set -euxo pipefail
+          sudo apt-get update -y
+          sudo apt-get install -y git-lfs
+          git lfs install
+          git lfs fetch --all || true
+          git lfs checkout || true
+
+      - name: Show where we are & list data tree
+        run: |
+          set -euxo pipefail
+          pwd
+          ls -la
+          echo "---- tree under Assignment2_raghulch/data ----"
+          find Assignment2_raghulch/data -maxdepth 2 -type d -print || true
+          echo "---- sample counts ----"
+          for d in word_pdfs_png google_docs_pdfs_png python_pdfs_png fourth_source_pdfs_png fifth_source_pdfs_png; do
+            p="Assignment2_raghulch/data/$d"
+            if [ -d "$p" ]; then
+              c=$(ls "$p"/*.png 2>/dev/null | wc -l || true)
+              echo "$p => $c pngs"
+            else
+              echo "$p => (missing)"
+            fi
+          done
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install -U pip
+          pip install numpy scipy scikit-learn matplotlib pillow pymupdf joblib statsmodels
+
+      - name: Verify PNGs (hard fail only if 4-class core folders are empty)
+        working-directory: Assignment2_raghulch
+        shell: bash
+        run: |
+          set -euo pipefail
+          must_have=(word_pdfs_png google_docs_pdfs_png python_pdfs_png fourth_source_pdfs_png)
+          for d in "${must_have[@]}"; do
+            if [[ ! -d "data/$d" ]]; then
+              echo "::error::Missing data/$d"; exit 1
+            fi
+            shopt -s nullglob
+            n=(data/$d/*.png)
+            if [[ ${#n[@]} -eq 0 ]]; then
+              echo "::error::data/$d is empty"; exit 1
+            fi
+          done
+          echo "Core 4-class PNGs present."
+
+      - name: Run 4-class analysis
+        working-directory: Assignment2_raghulch
+        env:
+          MIN_BYTES: "0"
+        run: |
+          set -euxo pipefail
+          mkdir -p results/logs
+          python src/analysis.py | tee results/logs/task5_4class_actions.txt
+
+      - name: Run 5-class analysis (skip failure if 5th absent)
+        working-directory: Assignment2_raghulch
+        continue-on-error: true
+        env:
+          MIN_BYTES: "0"
+        run: |
+          set -euxo pipefail
+          if [[ -d data/fifth_source_pdfs_png ]] && ls data/fifth_source_pdfs_png/*.png >/dev/null 2>&1; then
+            python src/analysis.py --include-fifth | tee results/logs/task5_5class_actions.txt
+          else
+            echo "No fifth_source_pdfs_png present; skipping 5-class."
+          fi
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: assignment2-results
+          path: Assignment2_raghulch/results
+
+      - name: Commit results back to repo
+        working-directory: Assignment2_raghulch
+        run: |
+          git config user.name  "Raghul (CI)"
+          git config user.email "raghuldav+ci@users.noreply.github.com"
+          git add results || true
+          git commit -m "CI: analysis results (PNG-only debug)" || echo "nothing to commit"
+          git push || true
